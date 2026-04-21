@@ -416,7 +416,7 @@
     <h2>🔗 Proxies</h2>
     <div class="card">
       <div class="games-grid" id="proxiesGrid">
-        <a class="game-btn" href="https://andesine-button.vercel.app/" rel="noopener">Andesine</a>
+        <a class="game-btn" href="https://andesine-button.vercel.app/" target="_blank" rel="noopener">Andesine</a>
       </div>
     </div>
   </section>
@@ -598,14 +598,6 @@
   document.getElementById('btnFetchSite').addEventListener('click', fetchSite);
   document.getElementById('btnOpenForm').addEventListener('click', function() {
     window.open('https://docs.google.com/forms/d/e/1FAIpQLScaYcFE6kxkrrnx09OX8QLJZluyDLUeH65pDbRa-I2DapeQ7A/viewform?usp=dialog', '_blank');
-  });
-
-// ── Proxies ──
-  document.getElementById('proxiesGrid').addEventListener('click', e => {
-    const link = e.target.closest('.game-btn');
-    if (!link) return;
-    e.preventDefault();
-    openGame(link.href);
   });
   
   // Allow pressing Enter in the URL input
